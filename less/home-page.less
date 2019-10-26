@@ -3,6 +3,9 @@
 .home {
 
   .intro {
+    .main-header {
+      .borders();
+    }
 
     h2 {
       padding: 15px;
@@ -58,8 +61,16 @@
       }
 
       .btn {
+        .btn-design(space-between, center);
       }
+      .btn:hover {
+        background: white;
+        color: darkred;
+      }
+
     }
+
+    
 
     .walk-img {
       width: 46%;
@@ -68,7 +79,7 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .borders();
       }
     }
   }
